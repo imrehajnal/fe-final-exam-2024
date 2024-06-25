@@ -1,6 +1,6 @@
-import './App.css'; 
-import Header from './components/Header';
-import CatCard from './components/CatCard';
+import "./App.css";
+import Header from "./components/Header";
+import CatCard from "./components/CatCard";
 
 const cats = [
   {
@@ -26,14 +26,14 @@ const cats = [
 function App() {
   return (
     <div className="App">
-        <Header />
-        <div className="cat-gallery">
-            {cats.map(cat => (
-                <CatCard key={cat.id} cat={cat} />
-            ))}
-        </div>
+      <Header />
+      <div className="cat-gallery">
+        {cats.map((cat) => (
+          <CatCard key={cat.id} cat={cat} />
+        ))}
+      </div>
     </div>
-);
+  );
 }
 
 export default App;
