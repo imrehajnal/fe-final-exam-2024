@@ -1,0 +1,49 @@
+/* App.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.cat-gallery {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cat-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cat-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cat-details {
+    padding: 20px;
+}
+
+/* Responszív elrendezés */
+@media (min-width: 768px) {
+    .cat-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .cat-gallery {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
