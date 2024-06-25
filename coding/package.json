@@ -1,0 +1,13 @@
+{
+  "name": "coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test:ci": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
