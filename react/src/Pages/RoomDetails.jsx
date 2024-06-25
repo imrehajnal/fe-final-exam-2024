@@ -9,7 +9,7 @@ const formatCurrency = (amount) => {
   }).format(amount);
 };
 
-const RoomDetails = () => {
+export default function RoomDetails() {
   const { id } = useParams();
   const [room, setRoom] = useState(null);
   const [furnitures, setFurnitures] = useState([]);
@@ -125,6 +125,5 @@ const RoomDetails = () => {
       </div>
     </div>
   );
-};
+}
 
-export default RoomDetails;
